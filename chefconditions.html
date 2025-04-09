@@ -1,0 +1,123 @@
+<!-- Chef Terms and Conditions Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef Terms - FreshFeast</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="wcu-section">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" id="navItem1" href="#wcuSection">
+                    Why Choose Us?
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="exploreSection.html" id="navItem2">Explore Menu</a>
+                <a class="nav-link" href="userdetails.html" id="navItem3">Explore Chefs</a>
+                <a class="nav-link" href="joinus.html" id="navItem4">Join Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+  <div class="container py-5 mt-5">
+    <h2 class="wcu-section-heading mb-4 text-center">Chef Terms & Conditions</h2>
+      
+    <ol class="wcu-section-description pl-4">
+        <li class="mb-2">
+          All meals prepared by the chef must maintain high standards of cleanliness and hygiene.
+          The kitchen space should be regularly sanitized and all cooking utensils and surfaces must be cleaned
+          before and after every use to ensure customer safety.
+        </li>
+        <li class="mb-2">
+          Only fresh, high-quality, and unexpired ingredients must be used for cooking.
+          Meals prepared using stale, low-grade, or leftover ingredients will not be accepted and may result in deactivation from the platform.
+        </li>
+        <li class="mb-2">
+          FreshFeast is strictly a home-cooked meal delivery platform. Pre-cooked meals, food from restaurants,
+          or store-bought ready-to-eat items are strictly prohibited and considered a violation of platform policies.
+        </li>
+        <li class="mb-2">
+          Chefs are required to update their daily availability status and menu offerings on the FreshFeast platform
+          to maintain transparency and avoid customer dissatisfaction due to unavailable items.
+        </li>
+        <li class="mb-2">
+          Timeliness is critical. All accepted meal orders must be prepared and ready for pickup at the scheduled time
+          to ensure smooth coordination with delivery partners and satisfaction of customers.
+        </li>
+        <li class="mb-2">
+          Before approval and listing on the platform, chefs must provide a valid government-issued ID and proof of residence.
+          These documents will be securely stored for verification and compliance purposes.
+        </li>
+        <li class="mb-2">
+          Each menu item must have a clear and honest description including ingredients, portion size, and pricing.
+          Any significant changes to recipes or portions must be updated on the platform beforehand.
+        </li>
+        <li class="mb-2">
+          Once a meal order is accepted by the chef, it cannot be canceled except in genuine emergency cases.
+          In such situations, FreshFeast must be informed immediately so alternate arrangements can be made.
+        </li>
+        <li class="mb-2">
+          Meals must be packed in clean, spill-proof, and food-safe packaging.
+          Proper labeling with the item name and order details should also be followed to avoid confusion during delivery.
+        </li>
+        <li class="mb-2">
+          The use of artificial food colors, synthetic preservatives, and artificial flavoring agents should be avoided.
+          FreshFeast promotes healthy, homemade meals and expects chefs to maintain authenticity and nutrition.
+        </li>
+        <li class="mb-2">
+          Chefs must maintain polite, professional, and respectful communication with both customers and FreshFeast team members.
+          Any inappropriate behavior can lead to suspension from the platform.
+        </li>
+        <li class="mb-2">
+          All transactions must be processed through FreshFeast’s secure payment system.
+          Chefs are not allowed to accept or request payments directly from customers in any form including cash, UPI, or bank transfers.
+        </li>
+        <li class="mb-2">
+          If a dish contains common allergens like peanuts, dairy, soy, or gluten, it must be clearly indicated in the menu description
+          to help customers with dietary restrictions make safe choices.
+        </li>
+        <li class="mb-2">
+          FreshFeast may conduct random checks, including virtual or physical inspection of the kitchen space,
+          to ensure consistent hygiene and quality standards.
+        </li>
+        <li class="mb-2">
+          Any violation of the above terms may lead to warnings, temporary suspension, or permanent removal from the FreshFeast platform.
+          FreshFeast reserves the right to take appropriate action based on the severity of the issue.
+        </li>
+      </ol>
+      
+      
+      
+        <div class="form-check my-4">
+            <input class="form-check-input" type="checkbox" id="agreeCheck" />
+            <label class="form-check-label wcu-section-description" for="agreeCheck">
+              I agree to all the terms and conditions
+            </label>
+          </div>
+        
+          <a href="chefregisterform.html"><button class="custom-button" id="proceedBtn" disabled >Proceed</button></a>
+          
+        </div>
+        
+        <script>
+          const checkbox = document.getElementById("agreeCheck");
+          const button = document.getElementById("proceedBtn");
+          checkbox.addEventListener("change", function () {
+            button.disabled = !this.checked;
+          });
+
+        </script>
+  </script>
+</body>
+</html>

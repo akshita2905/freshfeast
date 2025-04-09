@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chef Profile - FreshFeast</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    .profile-banner {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0)), url('https://source.unsplash.com/800x600/?chef');
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      color: white;
+    }
+    .menu-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease-in-out;
+    }
+    .menu-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    }
+    .rating-stars {
+      color: #fbbf24;
+    }
+    .order-button {
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .mobile-cta {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px 15px;
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+      }
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" id="navItem1" href="#wcuSection">
+                    Why Choose Us?
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="exploreSection.html" id="navItem2">Explore Menu</a>
+                <a class="nav-link" href="userdetails.html" id="navItem3">Explore Chefs</a>
+                <a class="nav-link" href="joinus.html" id="navItem4">Join Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Profile Header -->
+<section class="profile-banner d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="https://source.unsplash.com/200x200/?portrait,woman" class="rounded-circle img-fluid border border-white" alt="Chef Ananya" />
+      </div>
+      <div class="col-md-8 d-flex flex-column justify-content-center">
+        <h1 class="display-4 font-weight-bold">Ananya Sharma</h1>
+        <p class="lead">Specialties: North Indian, Biryani, Tandoori</p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i>Mumbai, India</p>
+        <p><i class="fas fa-star text-warning"></i> 4.7 / 5.0 (245 Ratings)</p>
+        <p><span class="badge badge-success">Available Today: 10 AM – 8 PM</span></p>
+        <a href="#" class="custom-outline-button">Order from Chef</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section class="container py-5">
+  <h2 class="mb-4 text-center">Chef's Menu</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="menu-card">
+        <h5>Biryani Bonanza</h5>
+        <p>Authentic Hyderabadi biryani served with raita and salad.</p>
+        <p class="font-weight-bold">₹180</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="menu-card">
+        <h5>Butter Chicken</h5>
+        <p>Rich, creamy and perfectly spiced butter chicken.</p>
+        <p class="font-weight-bold">₹220</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="menu-card">
+        <h5>Tandoori Roti Combo</h5>
+        <p>2 Tandoori rotis with Paneer Butter Masala.</p>
+        <p class="font-weight-bold">₹150</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer Ratings -->
+<section class="container pb-5">
+  <h2 class="mb-4 text-center">Customer Ratings</h2>
+  <div class="list-group">
+    <div class="list-group-item">
+      <h6 class="mb-1">Ravi Kumar <span class="rating-stars ml-2">⭐⭐⭐⭐⭐</span></h6>
+      <p class="mb-1">Absolutely loved the biryani! Just like home.</p>
+    </div>
+    <div class="list-group-item">
+      <h6 class="mb-1">Simran Arora <span class="rating-stars ml-2">⭐⭐⭐⭐☆</span></h6>
+      <p class="mb-1">Tandoori roti was soft and fresh. Great flavors!</p>
+    </div>
+    <div class="list-group-item">
+      <h6 class="mb-1">Ali Rehman <span class="rating-stars ml-2">⭐⭐⭐⭐⭐</span></h6>
+      <p class="mb-1">The butter chicken reminded me of my mom's cooking. Highly recommended!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile Sticky CTA -->
+<div class="mobile-cta d-md-none text-center">
+  <a href="#" class="btn btn-success btn-block">Order Now from Ananya</a>
+</div>
+
+<!-- Bootstrap & FontAwesome -->
+<script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

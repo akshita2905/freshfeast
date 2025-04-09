@@ -1,0 +1,72 @@
+<!-- Delivery Partner Terms and Conditions Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery Partner Terms - FreshFeast</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="wcu-section">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" id="navItem1" href="#wcuSection">
+                    Why Choose Us?
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="exploreSection.html" id="navItem2">Explore Menu</a>
+                <a class="nav-link" href="userdetails.html" id="navItem3">Explore Chefs</a>
+                <a class="nav-link" href="joinus.html" id="navItem4">Join Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+  <div class="container py-5 mt-5">
+    <h2 class="wcu-section-heading mb-4 text-center">Delivery Partner Terms & Conditions</h2>
+    
+    <ol class="wcu-section-description pl-4">
+        <li class="mb-2">Delivery partners must maintain a clean, well-groomed appearance and behave professionally at all times while on duty.</li>
+        <li class="mb-2">All deliveries should be made promptly at the scheduled time without unnecessary delays to ensure customer satisfaction.</li>
+        <li class="mb-2">Delivery bags must be clean, insulated, and food-safe. Proper care should be taken to avoid spillage or damage to food items.</li>
+        <li class="mb-2">Partners must verify the correct order before pickup and cross-check the customer name and address before handing over the delivery.</li>
+        <li class="mb-2">FreshFeast does not tolerate rude or inappropriate behavior toward customers or chefs. Respectful communication is mandatory.</li>
+        <li class="mb-2">Delivery partners must not open or tamper with food packages under any circumstance.</li>
+        <li class="mb-2">A valid driving license, ID proof, and proof of residence are required to register and must be kept updated with the platform.</li>
+        <li class="mb-2">In case of delays or unforeseen issues during delivery, partners must immediately inform the FreshFeast support team.</li>
+        <li class="mb-2">Delivery partners must not accept or demand cash or any form of direct payment from customers.</li>
+        <li class="mb-2">Alcohol, tobacco, or other prohibited substances must not be consumed while on duty.</li>
+        <li class="mb-2">If a customer refuses a delivery or reports any issues, the partner must follow FreshFeast's return or dispute resolution protocol.</li>
+        <li class="mb-2">FreshFeast reserves the right to conduct background checks and/or vehicle inspections at any point in time.</li>
+        <li class="mb-2">Inappropriate behavior, repeated late deliveries, or customer complaints may result in suspension or permanent removal from the platform.</li>
+        <li class="mb-2">Delivery partners are responsible for maintaining updated vehicle insurance and all legal documentation if using a vehicle for delivery.</li>
+        <li class="mb-2">FreshFeast may update terms periodically. Delivery partners will be informed, and continued service implies acceptance of the updated terms.</li>
+    </ol>
+
+    <div class="form-check my-4">
+        <input class="form-check-input" type="checkbox" id="agreeCheck" />
+        <label class="form-check-label wcu-section-description" for="agreeCheck">
+            I agree to all the terms and conditions
+        </label>
+    </div>
+    <a href="deliveryboyform.html"><button class="custom-button" id="proceedBtn" disabled>Proceed</button></a>
+    
+  </div>
+
+  <script>
+    const checkbox = document.getElementById("agreeCheck");
+    const button = document.getElementById("proceedBtn");
+    checkbox.addEventListener("change", function () {
+      button.disabled = !this.checked;
+    });
+  </script>
+</body>
+</html>

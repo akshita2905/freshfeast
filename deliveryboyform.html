@@ -1,0 +1,169 @@
+<!-- Delivery Partner Registration Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delivery Partner Registration - FreshFeast</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .registration-form-container {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    }
+    .form-label {
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .form-control,
+    select {
+      border-radius: 10px;
+      border: 1px solid #ced4da;
+      box-shadow: none;
+      margin-bottom: 20px;
+    }
+    .form-control-file {
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+    .form-control:focus,
+    select:focus {
+      border-color: #e63c3c;
+      box-shadow: 0 0 0 0.2rem rgba(230, 60, 60, 0.25);
+    }
+    .custom-button {
+      background-color: #e63c3c;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 24px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .custom-button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    .custom-button:hover:enabled {
+      background-color: #c23232;
+    }
+    .custom-control-label {
+      font-weight: 500;
+      margin-right: 16px;
+    }
+  </style>
+</head>
+<body class="wcu-section">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" id="navItem1" href="#wcuSection">
+                    Why Choose Us?
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="exploreSection.html" id="navItem2">Explore Menu</a>
+                <a class="nav-link" href="userdetails.html" id="navItem3">Explore Chefs</a>
+                <a class="nav-link" href="joinus.html" id="navItem4">Join Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+  <div class="container py-5 mt-5">
+    <h2 class="wcu-section-heading text-center mb-4">Delivery Partner Registration</h2>
+    <div class="registration-form-container mx-auto col-md-10 col-lg-8">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="location" class="form-label">City / Area</label>
+            <input type="text" class="form-control" id="location" placeholder="e.g. Hyderabad - Kukatpally" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="vehicleType" class="form-label">Vehicle Type</label>
+          <select class="form-control" id="vehicleType" required>
+            <option value="">Select</option>
+            <option>Cycle</option>
+            <option>Scooter</option>
+            <option>Motorbike</option>
+            <option>Car</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="idProof" class="form-label">Upload ID Proof (Aadhaar / PAN)</label><br>
+          <input type="file" class="form-control-file" id="idProof" required>
+        </div>
+
+        <div class="form-group">
+          <label for="licenseProof" class="form-label">Upload Driving License</label><br>
+          <input type="file" class="form-control-file" id="licenseProof" required>
+        </div>
+
+        <div class="form-group">
+          <label for="experience" class="form-label">Delivery Experience (in years)</label>
+          <input type="number" class="form-control" id="experience" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label d-block">Available for Full-time or Part-time?</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="fullTime" name="availability" class="custom-control-input" required>
+            <label class="custom-control-label" for="fullTime">Full-time</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="partTime" name="availability" class="custom-control-input" required>
+            <label class="custom-control-label" for="partTime">Part-time</label>
+          </div>
+        </div>
+
+        <div class="form-check mb-4">
+          <input type="checkbox" class="form-check-input" id="termsCheck">
+          <label class="form-check-label wcu-section-description" for="termsCheck">
+            I confirm that I have read and agreed to the 
+            <a href="deliverboyconditions.html" target="_blank">Terms & Conditions</a>.
+          </label>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="custom-button" id="registerBtn" disabled>Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const termsCheck = document.getElementById("termsCheck");
+    const registerBtn = document.getElementById("registerBtn");
+
+    termsCheck.addEventListener("change", function () {
+      registerBtn.disabled = !this.checked;
+    });
+  </script>
+</body>
+</html>

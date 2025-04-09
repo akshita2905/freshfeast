@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Join Us - FreshFeast</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles.css"> <!-- Replace with your CSS file path -->
+    <style>
+      .role-selection-section {
+        background-color: #f9fbfe;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+      }
+
+      .role-card {
+        border-radius: 16px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .role-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .role-image {
+        border-radius: 16px 16px 0 0;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .role-card-body {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 0 0 16px 16px;
+      }
+
+      .role-title {
+        color: #183b56;
+        font-family: "Roboto";
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .role-description {
+        color: #5a7184;
+        font-family: "Roboto";
+        font-size: 16px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-3">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-link active" id="navItem1" href="#wcuSection">
+                      Why Choose Us?
+                      <span class="sr-only">(current)</span>
+                  </a>
+                  <a class="nav-link" href="exploreSection.html" id="navItem2">Explore Menu</a>
+                  <a class="nav-link" href="userdetails.html" id="navItem3">Explore Chefs</a>
+                  <a class="nav-link" href="joinus.html" id="navItem4">Join Us</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <section class="role-selection-section mt-5">
+      <div class="container">
+        <h1 class="wcu-section-heading mb-4">How would you like to join FreshFeast?</h1>
+        <div class="row justify-content-center">
+          <!-- Chef Card -->
+          <div class="col-md-5 mb-4">
+            <a href="chefconditions.html"><!-- terms.html?role=chef -->
+              <div class="wcu-card role-card">
+                <img src="https://source.unsplash.com/500x300/?indian-chef,kitchen" alt="Join as Chef" class="role-image" />
+                <div class="role-card-body">
+                  <h5 class="role-title">Join as Chef</h5>
+                  <p class="role-description">Cook from your home, earn with your skills, and share the taste of homemade meals.</p>
+                  <button class="custom-button mt-3" >Get Started</button>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Delivery Partner Card -->
+          <div class="col-md-5 mb-4">
+             <a href="deliverboyconditions.html"><!-- terms.html?role=delivery -->
+              <div class="wcu-card role-card">
+                <img src="https://source.unsplash.com/500x300/?delivery-man,scooter" alt="Join as Delivery Partner" class="role-image" />
+                <div class="role-card-body">
+                  <h5 class="role-title">Join as Delivery Partner</h5>
+                  <p class="role-description">Deliver happiness on wheels and earn flexible income with every delivery.</p>
+                  <button class="custom-button mt-3">Get Started</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
